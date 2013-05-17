@@ -4,15 +4,17 @@ public class Somador {
     
     private int total;
 
-    public synchronized int getTotal() {
-        return total;
+    public Somador() {
+        this.total = 0;
     }
-
+    
     public synchronized void setTotal(int valor) {
         this.total = total + valor;
     }
     
-    public Somador() {
-        this.total = 0;
+    public int getTotal() {
+        return total;
     }
+    
+    
 }
